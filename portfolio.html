@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+        integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
@@ -17,33 +20,35 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <nav class="header-nav">
-            <a class="logo link" href="./index.html">Web<span class="header-logo-studio">Studio</span></a>
-            <ul class="menu list">
-                <li class="menu-item">
-                    <a class="menu-link link header-footer-text" href="./index.html">Studio</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link link header-footer-text" href="./portfolio.html">Portfolio</a>
-                </li>
-                <li class="menu-item">
-                    <a class="menu-link link header-footer-text" href="">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- Phone, email -->
-        <address>
-            <ul>
-                <li class="address list">
-                    <a class="contact-email link header-footer-text"
-                        href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li class="address list">
-                    <a class="contact-phone-number link header-footer-text" href="tel:+110001111111">+11 (000)
-                        111-11-11</a>
-                </li>
-            </ul>
-        </address>
+        <div class="container page-header-container page-header">
+            <nav class="header-nav">
+                <a class="logo link" href="./index.html">Web<span class="header-logo-studio">Studio</span></a>
+                <ul class="menu list">
+                    <li class="menu-item">
+                        <a class="menu-link link header-footer-text" href="./index.html">Studio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link link header-footer-text" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link link header-footer-text" href="">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Phone, email -->
+            <address class="address-main-section">
+                <ul class="address-list">
+                    <li class="address list">
+                        <a class="contact-email link header-footer-text"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="address list">
+                        <a class="contact-phone-number link header-footer-text" href="tel:+110001111111">+11 (000)
+                            111-11-11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </header>
     <!-- Main -->
     <main>
