@@ -41,12 +41,19 @@ button {
     cursor: pointer;
 }
 
+
+/* ===================== CLASES =================== */
 .container {
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .link {
@@ -64,6 +71,7 @@ button {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
+    margin-bottom: 72px;
 }
 
 .subtitle {
@@ -71,6 +79,7 @@ button {
     font-size: 20px;
     line-height: 1.20;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .description,
@@ -80,9 +89,13 @@ button {
     letter-spacing: 0.02em;
 }
 
+/* ===================== /CLASES ======================== */
+
 /* ------------------------- Header ------------------------- */
 
-.header {}
+.header {
+    border-bottom: 1px solid var(--accent-color);
+}
 
 .page-header-container {
     display: flex;
@@ -90,7 +103,8 @@ button {
 }
 
 .page-header {
-    padding: 24px;
+    padding: 24px 24px 23px;
+
 }
 
 .header-nav {
@@ -166,19 +180,26 @@ button {
     color: var(--hover-active-color);
 }
 
+/* ------------------------- /Header ------------------------- */
 
 /* ---------------------- Hero ------------------------- */
 
 .hero {
     background: var(--main-color-dark);
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
+
+
 
 .hero-title {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
     color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
 }
 
 .button {
@@ -187,19 +208,29 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 16px 32px;
+    border: none;
+    margin: 0 auto;
 }
+
+
 
 .hero-button-text {
     color: var(--white-color);
     background-color: var(--primary-brand-color);
+
 }
 
 .hero-button-text:hover,
 .hero-button-text:focus {
-    color: var(--hover-active-color);
-    background-color: var(--white-color);
+    color: var(--white-color);
+    background-color: var(--hover-active-color);
 
 }
+
+/* ---------------------- /Hero ------------------------- */
 
 /* -------------- 2nd section - features ----------------- */
 
@@ -216,9 +247,18 @@ button {
     overflow: hidden;
 }
 
-.features-list {}
+.features {}
 
-.features-item {}
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.features-item {
+    flex-basis: calc((100% - 72px) / 4);
+}
 
 
 .features-subtitle {}
@@ -227,15 +267,31 @@ button {
     color: var(--secondary-color-text);
 }
 
+/* -------------- /2nd section - features ----------------- */
+
 /* --------------- 3rd section - we-do ----------------- */
+
+.we-do {
+    padding-top: 0;
+}
 
 .we-do-title {}
 
-.we-do-list {}
+.we-do-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.we-do-item {
+    flex-basis: calc((100% - 48px) / 3);
+}
 
 .we-do-pic {}
 
 .we-do-image {}
+
+/* --------------- /3rd section - we-do ----------------- */
 
 /* -------------- 4th section - our-team ------------------ */
 
@@ -246,19 +302,33 @@ button {
 .our-team-title {}
 
 
-.our-team-list {}
+.our-team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .our-team-item {
     background: var(--white-color);
+    flex-basis: calc((100% - 72px) / 4);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-image {}
 
-.our-team-item-name {}
+/* work on margins/paddings */
+
+.our-team-item-name {
+    margin-top: 32px;
+}
 
 .our-team-item-position {
     color: var(--secondary-color);
+    margin-bottom: 32px;
 }
+
+/* -------------- /4th section - our-team ------------------ */
 
 /* ----------------- footer ------------------ */
 
@@ -272,15 +342,30 @@ button {
 
 .footer-logo-studio {
     color: var(--light-mode-color);
+
 }
 
+/* ----------------- /footer ------------------ */
+
 /* -------------- PORTFOLIO 1st screen ---------------- */
+
+.portfolio-btn {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 72px;
+    justify-content: center;
+    gap: 24px;
+}
 
 .button-text {
     background: var(--light-mode-color);
     color: var(--hover-active-color);
+    padding: 12px 24px;
+
 
 }
+
+.portfolio-button {}
 
 .button-text:hover,
 .button-text:focus {
@@ -288,12 +373,39 @@ button {
     background: var(--hover-active-color);
 }
 
-.portfolio-list {}
+.portfolio {
+    padding-top: 96px;
+}
 
-.portfolio-item {}
 
-.portfolio-subtitle {}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-item {
+    flex-basis: calc((100% - 48px) / 3);
+    margin-bottom: 48px;
+    border: 1px solid #E7E9FC;
+    background-color: var(--white-color);
+}
+
+.portfolio-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+.portfolio-subtitle {
+    margin-top: 32px;
+    margin-left: 16px;
+}
 
 .portfolio-description {
     color: var(--secondary-color-text);
+    margin-bottom: 32px;
+    margin-left: 16px;
+
 }
+
+/* -------------- /PORTFOLIO 1st screen ---------------- */
